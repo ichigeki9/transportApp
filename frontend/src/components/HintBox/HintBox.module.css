@@ -1,0 +1,67 @@
+.container {
+    position: absolute;
+    top: 28%;
+    right: -20.1rem;
+	display: flex;
+    align-items: center ;
+    justify-content: space-around;
+    flex-direction: column;
+	width: 20rem;
+	/* height: 25rem; */
+	z-index: 11;
+	background-color: #fff;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    z-index: -1;
+}
+.container_darkMode{
+color: rgb(235, 233, 233);
+background-color: #23272F;
+}
+
+.container h3{
+font-size: 1.4rem;
+/* border-bottom: 1px solid black; */
+margin-bottom: 5px;
+}
+
+.hintBox{
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    flex-direction: column;
+    padding: 5px;
+    width: 100%;
+    border-bottom: 1px solid rgba(148, 143, 143, 0.5);
+    font-size: 1.2rem;
+}
+.hintBox span{
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.hintBox:hover span {
+    opacity: 1;
+}
+
+
+/* validate: (value, formValues) => {
+								
+    if(value == formValues.time && activeObj.transport_date == formValues.transport_date && activeObj.transport_time == formValues.transport_time ) {
+        return true
+
+    
+    }else{
+        
+    return	checkHoursTransport(
+            convertTime(formValues.transport_date),
+            value,
+            formValues.transport_time,
+            convertTime(props.currentDate),
+            props.transportDataList
+        ) 
+    }
+        
+    }
+    // || "Godzina transportu koliduje z istniejącym transportem.",
+})} */

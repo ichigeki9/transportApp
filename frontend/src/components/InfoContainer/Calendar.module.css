@@ -1,0 +1,24 @@
+.darkmode {
+    background-color: #181B20 ;
+    color: #fff;
+  }
+  
+  .darkmode * {
+    color: #fff;
+  }
+
+
+  .darkmode button:hover{
+    background-color: #a3a2a259 !important;
+  }
+
+ 
+  
+  
+
+  .react-calendar__viewContainer .react-calendar__month-view .react-calendar__month-view__days   button{
+    background-color: #e61717!important;
+    background: #e61717!important;
+}
+
+

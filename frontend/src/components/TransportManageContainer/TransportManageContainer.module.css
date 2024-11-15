@@ -1,0 +1,236 @@
+.TransportList {
+	display: flex;
+	align-items: center;
+	justify-content: start;
+	flex-direction: column;
+	width: 80%;
+	height: 100%;
+}
+.titleToPrint{
+	display: none;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	width: 100%;
+	height: 100%;
+	font-size: 2rem;
+}
+
+.topBox {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	border-bottom: 1px solid black;
+	background-color: #eeeded;
+	height: 10rem;
+	padding: 0 1rem;
+	transition: background-color 1s;
+}
+.topBox_darkMode {
+	background-color: #343944;
+}
+
+.logoBox {
+	height: 100%;
+	width: 13%;
+}
+
+.logoBox img {
+	height: 100%;
+	width: 100%;
+}
+
+.buttonsBox {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	text-align: center;
+}
+.buttonsBox button {
+	padding: 1rem 3rem;
+	margin: 2rem;
+	font-size: 1rem;
+}
+.switchBox {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+}
+
+.userInfoBox {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	width: 7rem;
+	font-size: 1.5rem;
+	padding: 0 1rem;
+	margin-right: 3rem;
+	color: #0a2834;
+	transition: color 1s;
+}
+.userInfoBox_darkMode {
+	color: #f6f7f9;
+}
+
+.userInfoBox i {
+	margin: 0 0.5rem;
+}
+
+.transportListContainer {
+	width: 100%;
+	height: 100%;
+	background-color: #ffffff;
+	transition: background-color 1s;
+}
+
+.transportListContainer_darkMode {
+	background-color: #181a20;
+}
+
+.transportListBox {
+	display: flex;
+	align-items: start;
+	justify-content: space-between;
+	color: #000000;
+	background-color: #ffffff;
+	transition: background-color 0.5s;
+}
+.transportListBox:nth-child(even) {
+	background-color: #eeeded;
+}
+
+.transportListBox_darkMode:nth-child(even) {
+	background-color: #343944;
+}
+.transportListBox_darkMode {
+	background-color: #181b20;
+	/* border-bottom: 1px solid rgb(177, 177, 177); */
+}
+.active_darkMode {
+	background-color: rgba(115, 218, 241, 0.8) !important;
+}
+
+.active {
+	background-color: rgba(68, 187, 213, 0.8) !important;
+}
+
+.transportListBox div {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	min-height: 3.5rem;
+	font-size: 1.2rem;
+	color: #000000;
+	
+	
+}
+
+.transportListBox_darkMode div {
+	color: #f6f7f9;
+}
+
+.messageBox {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 2rem;
+	margin-top: 5rem;
+}
+.messageBox_darkMode{
+	color: #ffffff;
+}
+
+.lpBox {
+	flex-shrink: 2;
+	min-width: 3rem;
+}
+.dataBox {
+	flex-shrink: 2;
+	min-width: 11rem;
+}
+.timeBox {
+	text-align: center;
+	flex-shrink: 2;
+	min-width: 11rem;
+}
+.additional_information{
+	flex-shrink: 2;
+	min-width: 9rem;
+}
+
+.switchBox {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	
+}
+.switchBox button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 2rem;
+	width: 2rem;
+	height: 2rem;
+	background-color: inherit;
+	border: none;
+	cursor: pointer;
+	padding: 1.5rem;
+	border-radius: 50%;
+}
+
+.switchBox button:hover {
+background-color: rgba(255, 255, 255, 0.8);
+}
+
+
+@media print{
+	.lpBox {
+		flex-shrink: 2;
+		min-width: 3rem;
+	}
+	.dataBox {
+		flex-shrink: 2;
+		min-width: 5rem;
+	}
+	.additional_information{
+		flex-shrink: 2;
+		min-width: 5rem;
+	}
+	.timeBox {
+		text-align: center;
+		flex-shrink: 2;
+		min-width: 5rem;
+	}
+	.transportListBox div {
+	width: 100%;
+		font-size:12px;
+	}
+	.TransportList{
+		width: 100%;
+	}
+	/* .logoBox{
+		display: none;
+	} */
+	.buttonsBox{
+		display: none;
+	}
+	.switchBox{
+		display: none;
+	}
+	.userInfoBox{
+		display: none;
+	}
+	.titleToPrint{
+		display: flex;
+	}
+
+	/* .topBox{
+		display: block;
+	} */
+}

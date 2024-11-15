@@ -1,0 +1,19 @@
+.errorBlock {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	border: 1px solid black;
+	border-radius: 5px;
+	padding: 2rem;
+	background-color: #fff;
+}
+
+.errorBlock h3 {
+	font-size: 2rem;
+	margin-bottom: 1rem;
+}
+
+.errorBlock p {
+	font-size: 1.5rem;
+}

@@ -1,0 +1,173 @@
+:root {
+	--nf-input-size: 1rem;
+	--nf-input-font-size: calc(var(--nf-input-size) * 0.875);
+	--nf-small-font-size: calc(var(--nf-input-size) * 0.875);
+	--nf-input-font-family: inherit;
+	--nf-label-font-family: inherit;
+	--nf-input-color: #20242f;
+	--nf-input-border-radius: 0.25rem;
+	--nf-input-placeholder-color: #979cae;
+	--nf-input-border-color: #c0c4c9;
+	--nf-input-border-width: 1px;
+	--nf-input-border-style: solid;
+	--nf-input-border-bottom-width: 2px;
+	--nf-input-focus-border-color: #3b4ce2;
+	--nf-input-background-color: #f9fafb;
+	--nf-invalid-input-border-color: var(--nf-input-border-color);
+	--nf-invalid-input-background-color: var(--nf-input-background-color);
+	--nf-invalid-input-color: var(--nf-input-color);
+	--nf-valid-input-border-color: var(--nf-input-border-color);
+	--nf-valid-input-background-color: var(--nf-input-background-color);
+	--nf-valid-input-color: inherit;
+	--nf-invalid-input-border-bottom-color: red;
+	--nf-valid-input-border-bottom-color: green;
+	--nf-label-font-size: var(--nf-small-font-size);
+	--nf-label-color: #374151;
+	--nf-label-font-weight: 500;
+	--nf-slider-track-background: #dfdfdf;
+	--nf-slider-track-height: 0.25rem;
+	--nf-slider-thumb-size: calc(var(--nf-slider-track-height) * 4);
+	--nf-slider-track-border-radius: var(--nf-slider-track-height);
+	--nf-slider-thumb-border-width: 2px;
+	--nf-slider-thumb-border-focus-width: 1px;
+	--nf-slider-thumb-border-color: #ffffff;
+	--nf-slider-thumb-background: var(--nf-input-focus-border-color);
+}
+
+.modalAddTransportContainer {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: start;
+	flex-direction: column;
+	width: 35rem;
+	/* height: 50rem; */
+	border: 1px solid black;
+	background-color: #fff;
+	border-radius: 15px;
+	box-shadow: 5px 5px 5px rgb(129, 129, 129);
+
+	padding: 2.5em;
+	padding-bottom: 0;
+	border-radius: 0.75rem;
+	line-height: 1.6;
+	/* overflow: hidden; */
+	margin-bottom: 2rem;
+	position: relative;
+	font-size: 0.875rem;
+	box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+		0 4px 6px -2px rgba(0, 0, 0, 0.05);
+	z-index: 10;
+}
+
+.modalAddTransportContainer_darkMode {
+	background-color: #23272f;
+	/* background-color: #343944;  */
+	color: white;
+}
+
+.titleModal {
+	font-size: 1.5rem;
+}
+
+.inputModalAddTransportBox {
+	position: relative;
+	display: flex;
+	align-items: start;
+	justify-content: center;
+	flex-direction: column;
+	width: 100%;
+	height: 100%;
+	/* border: 1px solid black; */
+	padding: 0.3rem;
+	margin: 0.6rem;
+}
+
+.inputModalAddTransportBox label {
+	margin-bottom: 5px;
+	font-size: 1.3rem;
+}
+.inputModalAddTransportBox input {
+	width: 90%;
+	font-size: 1.2rem;
+	text-align: start;
+	background: var(--nf-input-background-color);
+	font-family: inherit;
+	/* font-size: var(--nf-input-font-size); */
+	border-bottom-width: var(--nf-input-border-width);
+	font-family: var(--nf-input-font-family);
+	box-shadow: none;
+	border-radius: var(--nf-input-border-radius);
+	border: var(--nf-input-border-width) var(--nf-input-border-style) #44bbd5;
+	border-bottom: var(--nf-input-border-bottom-width)
+		var(--nf-input-border-style) #44bbd5;
+	color: var(--nf-input-color);
+	width: 100%;
+	padding: calc(var(--nf-input-size) * 0.75);
+	height: calc(var(--nf-input-size) * 2.75);
+	line-height: normal;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	transition: all 0.15s ease-out;
+	--icon-padding: calc(var(--nf-input-size) * 2.25);
+	--icon-background-offset: calc(var(--nf-input-size) * 0.75);
+}
+.inputModalAddTransportBox input:focus {
+	border-color: #1681a4;
+}
+.inputModalAddTransportBox_darkMode input {
+	background-color: #3d434e;
+	color: white;
+}
+
+.modalAddTransportButtonBox {
+	/* position: absolute;
+	bottom: 0;
+	left: 0; */
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	width: 100%;
+	/* height: 2rem; */
+	margin: 1rem 0;
+	padding: 1rem;
+	margin-bottom: 0;
+	background-color: #eeeded;
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
+}
+.modalAddTransportButtonBox_darkMode {
+	background-color: #181b20;
+}
+
+.error {
+	position: absolute;
+	bottom: -20px;
+	color: red;
+	/* padding-top: 4px; */
+	padding-left: 8px;
+}
+
+.hintBoxButton {
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 1rem;
+	height: 4rem;
+	right: 10px;
+	top: 48%;
+}
+
+.hintBoxButton button {
+	background-color: inherit;
+	border: none;
+	width: 100%;
+	height: 100%;
+	font-size: 1.1rem;
+	cursor: pointer;
+}
+.hintBoxButton_darkMode button {
+	color: white;
+}

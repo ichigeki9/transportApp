@@ -1,0 +1,28 @@
+.button{
+	padding: 1rem 3rem;
+	background-color: #44BBD5;
+	/* background-color: #15b983; */
+	color: white;
+	border-radius: 5px;
+	border: none;
+	font-weight:500;
+	font-size: 1rem;
+}
+
+.button_darkMode{
+	background-color: #58C4DC;
+}
+
+.button:hover{
+	cursor: pointer;
+	background: #1681A4;
+	/* background: #0ea271; */
+}
+.button:disabled{
+	background-color: #b2d2db;
+	cursor:default;
+}
+.button_darkMode:disabled{
+	background-color: rgb(73, 134, 148);
+	color: rgba(255, 255, 255, 0.6);
+}

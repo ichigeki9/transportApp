@@ -1,0 +1,9 @@
+flask
+werkzeug
+psycopg2
+flask-cors
+webargs
+python-dotenv
+marshmallow
+flask-migrate
+SQLAlchemy

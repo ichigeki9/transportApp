@@ -1,0 +1,14 @@
+form{
+    padding: 1rem;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    width: 20rem;
+    height: 20rem;
+ border: 1px solid black;
+}
+form .InputBox{
+    margin-bottom: 1rem;
+}
+

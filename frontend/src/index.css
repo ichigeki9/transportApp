@@ -1,0 +1,11 @@
+:root{
+    --bgc:white;
+    --txCol:black;
+
+    [data-theme="dark"] {
+        --bgc:black;
+        --txCol:white;
+
+    }
+
+}

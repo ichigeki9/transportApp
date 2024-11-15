@@ -1,0 +1,112 @@
+.infoContainer {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+	border: 1px solid black;
+    width: 20%;
+    height: 100%;
+    background-color: #EEEDED;
+    transition: background-color 1s;
+}
+
+
+
+.infoContainer_darkMode{
+    background-color: #343944;
+}
+
+.emptyBoxTransportInfo{
+    font-size: 1.3rem;
+}
+.emptyBoxTransportInfo_darkMode p{
+    transition: color 1s;
+    color: #F6F7F9;
+}
+
+.dataBox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 5rem;
+    background-color: #fff;
+    font-size:3rem ;
+    border-bottom: 1px solid rgba(10   ,40 , 52, 0.4);
+    color:#0A2834 ;
+    transition: background-color 1s ,color 1s;
+}
+.dataBox_darkMode{
+    /* background-color: #23272F; */
+    background-color: #181B20;
+    color:#F6F7F9 ;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+
+
+.transportDataContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.transportInfoBox{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    transition: background-color 1s;
+}
+
+.transportInfoBox_darkMode{
+    /* background-color: #23272F; */
+    /* background-color: #343944; */
+    background-color: #181B20;
+}
+
+.box{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    /* border: 1px solid #b7d0d6; */
+    border-bottom: 1px solid rgba(10   ,40 , 52, 0.4);
+    text-align: center;
+}
+
+
+.box h2{
+    margin-bottom: 0.5rem;
+    font-size: 1.4rem;
+}
+.box p{
+    font-size: 1.3rem;
+    color: #000;
+}
+.box_darkMode{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.box_darkMode h2 {
+    color:#e4e4e6 ;
+}
+.box_darkMode p {
+    color:#e4e4e6 ;
+    /* color:#d5d6d8 ; */
+    /* color:#F6F7F9 ; */
+}
+
+@media print{
+    .infoContainer{
+        display: none;
+    }
+}
